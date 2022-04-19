@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class BinarySearch {
     static int bs(int arr[], int target) {
-        int start = 0, end = arr.length - 1;
+        int start = 0, end = arr.length;
         while (start <= end) {
             // CAUTION: Prone to overflow!!
             // int mid = (start + end) / 2;
