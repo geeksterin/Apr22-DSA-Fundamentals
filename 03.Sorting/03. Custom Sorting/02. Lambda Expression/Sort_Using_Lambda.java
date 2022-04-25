@@ -10,8 +10,8 @@ public class Sort_Using_Lambda {
             return -1 * (x - y);
         });
 
-        // syntax
-        // ()->{
+        // syntax for lambda expression.
+        // (a,b)->{
 
         // }
 
@@ -25,7 +25,8 @@ public class Sort_Using_Lambda {
 
         // //The natural/default seq for numbers is ascending order.
         // // The natural/default seq for strings is dictionary order.
-        Arrays.sort(sa);
+        int ar[] = { 1, 2, 4, -1, 0 };
+        Arrays.sort(ar);
 
         // Lamda expression. in java 8 : de-facto way!
         Arrays.sort(sa, (x, y) -> {

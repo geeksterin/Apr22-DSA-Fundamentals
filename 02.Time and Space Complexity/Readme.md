@@ -6,7 +6,6 @@
 		- "Time" : Execution Time.
 		- "Space": (memory consumption/ memory footrpint) at runtime taken by the program.
 
-
 2. How do I measure time and space taken by algorithms?
 ---------------------------------------------------------------------------------------------------
 1. 	Running the algorithms directly on a machine. 
@@ -22,7 +21,7 @@
  2. What does **CASE** mean in Asymptotic Anaylsis:
 	
 	- **WORST CASE**: 
-	 A input example or a scenario in which your given algorithm performs the worst in wrt to Time and Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
+	 A input example or a scenario in which your given algorithm performs the worst wrt to Time or Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
 
 	- **BEST CASE**: 
 	 A input example or a scenario in which your given algorithm performs the BEST  wrt to Time and Space is called BEST case. eg For a Linear search algorithm, a input array in which the target is in first index, for such a input case, the algorithm has to just do 1 comparision and it gets the answer.
@@ -30,10 +29,9 @@
 	- **AVERAGE CASE**:	
 	A input example or a scenario in which your given algorithm takes AVERAGE time or Space is called AVERAGE case. eg For a Linear search algorithm, a input array in which the target is present somewhere in middle, for such a input case, the algorithm has to just do roughly half number of comparisions to get the answer.
 	
-    - **UPPER BOUND**:
-		
-	-	Lower bound => big Omega
-	-	Tight bound => Theta 
+    -   **UPPER BOUND** => big O
+	-	**Lower bound** => big Omega
+	-	**Tight bound** => Theta 
 
 ### RULES for computing Time Complexity and Space Complexity 
 -----------------------------------------------------------------------------------------------------
@@ -41,7 +39,7 @@
 2. Only take the highest degree in a polynomial expression.
 
 ### 	Calculating Time Complexity in Iterative Code
----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 ###	    Constant Time Complexity aka O(1)
 	
 	void m1(){
@@ -83,12 +81,24 @@
 		}
 	}
 
+	// Question to Student.
+	static void m4(int n) {
+		int a = 10;
+		a = a+5;
+		for(int i=0;i<n;i++) {
+			// some O(1) expressions
+		}
+		for(int i=0;i<n;i++) {
+			// some O(1) expressions
+		}
+	}
+
 
 	 for(i = 1; i < n/2; i++){
         // some O(1) expressions
 	 }
 
-	 for(i = 1; i<n ; i+=2>){
+	 for(i = 1; i<n ; i+=2){
 		 //some constant operations.
 	 }
 
@@ -96,16 +106,16 @@
          // some O(1) expressions
 	  }
 
-	  
+	// Ex
 	void m2(){	
 	 	for(int i=0;i<1000;i++) {
 			// some O(1) expressions
 		}
 	}
 
-### 	Polynomial Time Complexity 
 
-#### 	Quadratic Time Complexity aka O(N*N)
+
+### 	Quadratic Time Complexity aka O(N*N)
 --------------------------------------------------------------------------------------
 	static int m1(int n) {	
 		for (int i = 0; i <= n; i++) {
@@ -257,7 +267,8 @@
 
 
 ### 								Space Complexity Anaylsis:
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
 - Extra space: Any memeory allocation done apart from holding the inputs is considered as extra space. 
 - Auxliary Space:  Any memory allocation which is related to the  input size is considered as an auxilary space. Also It is a subset of extra space. 
 	- So to calculate the space compelxity of any algorithm we need to find the auxilary space taken by the algorithm.

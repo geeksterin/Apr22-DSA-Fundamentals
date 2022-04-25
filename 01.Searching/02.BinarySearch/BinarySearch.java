@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+// SC: O(1)
 public class BinarySearch {
     static int bs(int arr[], int target) {
         int start = 0, end = arr.length;

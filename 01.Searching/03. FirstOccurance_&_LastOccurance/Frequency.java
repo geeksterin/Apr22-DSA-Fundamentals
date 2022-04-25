@@ -9,8 +9,9 @@ public class Frequency {
             if (arr[mid] == target) {
                 result = mid;
                 if (flag == true) {
+                    // first occurance
                     low = mid + 1;
-                } else
+                } else // last occurance.
                     high = mid - 1;
             }
 
@@ -29,7 +30,7 @@ public class Frequency {
         int lower_idx = FrequencyCount(arr, target, false);
         int uppper_idx = FrequencyCount(arr, target, true);
 
-        //some logic ...
+        // some logic ...
         System.out.println(uppper_idx - lower_idx + 1);
     }
 }

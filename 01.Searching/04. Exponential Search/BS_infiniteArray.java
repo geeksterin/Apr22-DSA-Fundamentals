@@ -2,15 +2,17 @@ public class BS_infiniteArray {
     static int bs(int[] arr, int target) {
         int low = 0, high = 1;
 
-        // setting the upper limit aka high
-        while (target >= arr[high]) {
-            low = high; // optimization
+        // Setting the end marker
+        while (target > arr[high]) {
+            low = high;
             high = 2 * high;
+            // edge case : ArrayOutOfBound Exception
             if (high >= arr.length - 1) {
                 high = arr.length - 1;
                 break;
             }
         }
+
         // regular binary Search.
         while (low <= high) {
             int mid = low + (high - low) / 2;
