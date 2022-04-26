@@ -7,7 +7,8 @@ public class Sort_Using_Lambda {
 
         // Lamda expression. in java 8 : de-facto way!
         Arrays.sort(arr, (x, y) -> {
-            return -1 * (x - y);
+            // return -1 * (x - y);
+            return y - x;
         });
 
         // syntax for lambda expression.

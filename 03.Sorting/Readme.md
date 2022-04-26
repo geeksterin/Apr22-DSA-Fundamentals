@@ -22,7 +22,7 @@ Online Algorithm: A algo which can take inputs in real time are called online al
 -   Lambda expression gives us the flexibility to store methods into a variable and use them , without the need to create a object. 
 -  It's a shortcut to define a Funtional Interface method.
 
-### Definition of functional interface ***
+### Definition of functional interface
 Conceptually, a functional interface has exactly one abstract method. Since default methods have an implementation, they are not abstract. If an interface declares an abstract method overriding one of the public methods of java.lang.Object, that also does not count toward the interface’s abstract method count since any implementation of the interface will have an implementation from java.lang.Object or elsewhere.
 
 1. https://www.youtube.com/watch?v=tj5sLSFjVj4 
