@@ -13,11 +13,5 @@ public class substringGen {
                 System.out.print(subStr + "\n");
             }
         }
-
-        // for (int i = 0; i < str.length(); i++) {
-        // for (int j = i + 1; j <= str.length(); j++) {
-        // System.out.println(s.substring(i, j));
-        // }
-        // }
     }
 }
