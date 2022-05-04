@@ -41,12 +41,15 @@ Hashing is the process of converting any arbitary length input(integer or String
 ### Questions on hashTables:
 --------------------------------------------------------------------------------------------
 - Count frequency of strings in a array
-- https://leetcode.com/problems/majority-element/ 
-- https://leetcode.com/problems/valid-anagram/ 
+- https://leetcode.com/problems/jewels-and-stones/ 
+- https://leetcode.com/problems/count-the-number-of-consistent-strings/ [x]
+- https://leetcode.com/problems/destination-city/ [x]
+- https://leetcode.com/problems/majority-element/ [x]
+- https://leetcode.com/problems/valid-anagram/    [x]
+- - https://leetcode.com/problems/two-sum/        [x]
 - https://leetcode.com/problems/group-anagrams/ 
 - https://leetcode.com/problems/unique-number-of-occurrences
 - https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/ 
-- https://leetcode.com/problems/two-sum/ [x]
 - https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ [x]
 - https://leetcode.com/problems/top-k-frequent-elements/ 
 - https://leetcode.com/problems/isomorphic-strings/ 
