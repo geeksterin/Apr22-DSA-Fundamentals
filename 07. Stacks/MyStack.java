@@ -10,31 +10,37 @@ class MyStack {
     }
 
     MyStack() {
-        top = -1;
+        top = -1; // means it's not pointing to any valid object/input.
     }
 
+    // INSERT operation in stack is called PUSH
     boolean push(int x) {
-        if (top >= (MAX - 1)) {
-            System.out.println("Stack Overflow");
+        // check if the underlying array is empty or not.
+        if (top >= MAX - 1) {
+            System.out.println("Stack overflow");
             return false;
-        } else {
-            // top+=1;
-            a[++top] = x;
-            System.out.println(x + " pushed into stack");
-            return true;
         }
+        // top +=1;
+        // a[top] = x;
+        a[++top] = x;
+        return true;
     }
 
+    // DELETE operation in stack is called POP
     int pop() {
+        // check if stack is empty
         if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         } else {
+            // int x = a[top];
+            // top = top-1;
             int x = a[top--];
             return x;
         }
     }
 
+    // Peek is for displaying the top element to user.
     int peek() {
         if (top < 0) {
             System.out.println("Stack Underflow");
@@ -50,6 +56,7 @@ class MyStack {
             System.out.print(" " + a[i]);
         }
     }
+
     public static void main(String args[]) {
         MyStack s = new MyStack();
         s.push(10);
@@ -61,8 +68,8 @@ class MyStack {
         s.print();
 
         // Stack Collections.
-        Stack<Integer> stk = new Stack<Integer>();
-        stk.push(5);
-        stk.pop();
+        Stack<Integer> stk = new Stack<>();
+        
+        
     }
 }

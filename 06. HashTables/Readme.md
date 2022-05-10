@@ -10,7 +10,7 @@ Hashing is the process of converting any arbitary length input(integer or String
 -------------------------------------------------------------------------------------------------
 -   Defination 1: It's a associative array which makes use of hashing to store values, where the key is feed inside the hash function to get the hashCode, and then this generated hashCode is used to map inside the array to store the value. so we can say hashtable is a key-value pair data structure.
 -  **index = HashFunction(key) & (n-1)**
-- **NULLs are not allowed as key or Value in a Hashtable BUT in a HashMap null both as key or Value atmost once** 
+- **NULLs are not allowed as key or Value in a HASHTABLE BUT in a HASHMAP null both as key or Value atmost once** 
 - HashMap/HashTable doesn't preserve the order of inputs.
 - The  search/lookup on amortized/average it is  O(1). Reason: When the load factor is reached the hashtables doubles in size leading to rehashing of all the keys and copy of data.
 
@@ -46,10 +46,24 @@ Hashing is the process of converting any arbitary length input(integer or String
 - https://leetcode.com/problems/destination-city/ [x]
 - https://leetcode.com/problems/majority-element/ [x]
 - https://leetcode.com/problems/valid-anagram/    [x]
-- - https://leetcode.com/problems/two-sum/        [x]
+- https://leetcode.com/problems/two-sum/        [x]
+
+- https://leetcode.com/problems/find-lucky-integer-in-an-array/ 
+- https://leetcode.com/problems/uncommon-words-from-two-sentences/
+- https://leetcode.com/problems/two-sum/ 
+- https://leetcode.com/problems/sum-of-unique-elements/ 
+- https://leetcode.com/problems/number-of-good-pairs/ 
+
+
+# 
 - https://leetcode.com/problems/group-anagrams/ 
 - https://leetcode.com/problems/unique-number-of-occurrences
 - https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/ 
 - https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ [x]
 - https://leetcode.com/problems/top-k-frequent-elements/ 
 - https://leetcode.com/problems/isomorphic-strings/ 
+
+
+## HashSet
+--------------------------------------------------------------------------
+- https://leetcode.com/problems/unique-email-addresses/ 
