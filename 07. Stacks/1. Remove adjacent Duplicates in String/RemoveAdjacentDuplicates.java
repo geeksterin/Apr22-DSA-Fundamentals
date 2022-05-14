@@ -1,3 +1,3 @@
-public class 4. RemoveAdjacentDuplicates {
-    
+public class RemoveAdjacentDuplicates {
+
 }

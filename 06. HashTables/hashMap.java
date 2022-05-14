@@ -16,7 +16,7 @@ public class hashMap {
         for (Map.Entry<String, Integer> e : map.entrySet()) {
             System.out.println("Key: " + e.getKey() + " Value: " + e.getValue());
         }
-        
+
         for (var x : map.entrySet()) {
             System.out.println(x.getKey() + "" + x.getValue());
         }

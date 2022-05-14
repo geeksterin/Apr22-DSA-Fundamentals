@@ -69,7 +69,6 @@ class MyStack {
 
         // Stack Collections.
         Stack<Integer> stk = new Stack<>();
-        
-        
+
     }
 }

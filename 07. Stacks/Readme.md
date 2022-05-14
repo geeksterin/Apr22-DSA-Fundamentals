@@ -10,20 +10,15 @@
 -   https://iq.opengenus.org/array-indices-start-from-1/ 
 
 
-
 ###                 Questions on Stacks:
 ------------------------------------------------------------------------------------------
     - Reverse a string using stack.
     - Reverse words in a sentence using stack.
+    - https://leetcode.com/problems/reverse-vowels-of-a-string/ 
+    - https://leetcode.com/problems/make-the-string-great/ 
     - Check balanced parenthesis. ()()((())) **
     - Min stack in O(1) space. ** -> Max, Avg, Mode.
-    - https://leetcode.com/problems/valid-anagram/ -> example: s = "anagram", t = "nagaram"
     - https://www.geeksforgeeks.org/leaders-in-an-array/ ****
+    - https://leetcode.com/problems/next-greater-element-i/ 
     - https://leetcode.com/problems/reverse-string-ii/ 
-    - https://leetcode.com/problems/reverse-vowels-of-a-string/ 
-
-###  How to identitfy when to use stack.
-
-"Hi how is this class going?"
-"going? class this is how Hi"
-Hint: Stack<> stk = new Stack<String>()
+    - https://leetcode.com/problems/online-stock-span/ 
