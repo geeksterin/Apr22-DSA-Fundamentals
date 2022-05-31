@@ -20,8 +20,8 @@
 2. **|** : Bitwise OR **(This is equivalent to bitwise OR)**
 3. **^** : Bitwise XOR 
     - Odd ones detector (BEST WAY)
-    - Addition with modulo 2 
-
+    - Addition of bits modulo 2 
+    - Observation: Same numbers cancel out each other when XORed .
 4. **<<** : Bitwise left shift , a shift of k steps towards left is equal to multiplying by 2^k.
 5. **>>** : Bitwise right shift , a shift of k steps towards right is dividing by 2^k.
 6. **~**  : Bitwise complement 
@@ -34,20 +34,22 @@
     - Set the kth bit.
     - Unset the kth bit.
     - Toggle the Kth bit 
-    - Unsetting the rightmost set bit.
+    - Unsetting the rightmost set bit. ***
+
+### NOTE: To get the minimum bits to represent a Decimal to binary we need ceil(lg(N))
     - Writig your own function to convert:
         - Decimal --> Binary
         - Decimal --> Octal 
         - Decimal --> Hexa 
-
-- Count number of set bits 
+- Count number of set bits  ***
 - Check power of two and power of 4 
  <!-- n != 0 && ((n&(n-1)) == 0) && (n & 0xAAAAAAAA) == 0; -->
 - pow(a,b)
-
-- Find the missing number.
-- Taking number complement. 
+- Find the odd number.
 - Reversing bits.
+
+
+- Taking number complement. 
 - Check number of zeros in factorials
 
 
@@ -71,3 +73,13 @@
 4. 2^10 = 1024
 5. 2^11 = 2048
 6. 2^12 = 
+
+
+
+
+ int res=0;
+    for(int i=0;i<32;i++){
+    	res= ( res << 1 ) | ( n & 1 );         
+    	n = n >> 1;                  
+    }
+    return res;
