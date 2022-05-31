@@ -2,6 +2,7 @@ public class main {
     public static void main(String[] args) {
         int N = 100;
         // TC: N*sqrt(N)
+        // upto N = 10^10 this approch
         for (int i = 2; i <= N; i++) {
             if (isPrime(i) == true)
                 System.out.print(i + ",");

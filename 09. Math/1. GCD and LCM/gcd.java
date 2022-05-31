@@ -1,4 +1,6 @@
 public class gcd {
+
+    // Euclid's Algorithm : log(max(n,m))
     public static void main(String[] args) {
         // gcd : greatest common division aka HCF (highest common factor)
         System.out.println(gcd(10, 25));

@@ -9,6 +9,9 @@ public class main {
 
     // TC: O(sqrt(N))
     // SC: O(1)
+    // NOTE 1: Factors appear in Pairs (a,b)
+    // NOTE 2: Factors follow a unique pattern of arrangement such that one factor (a) appears 
+    // before Sqrt(N) and other (b) appears after Sqrt(N) and sqrt(N) is also inclusive.
     static boolean isPrime(int n) {
         int factors = 0;
         for (int i = 2; i <= Math.sqrt(n); i++) {
