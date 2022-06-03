@@ -1,22 +1,48 @@
 
 public class main {
     static void sieveOfEratosthenes(int n) {
-        boolean prime[] = new boolean[n + 1];
-        for (int i = 0; i <= n; i++)
-            prime[i] = true;
+        // so that N is also covered as part of index
+        boolean primes[] = new boolean[n + 1];
+        for (int i = 0; i < primes.length; i++) {
+            primes[i] = true;
+        }
 
-        for (int p = 2; p * p <= n; p++) {
-            // If prime[p] is not changed, then it is a prime
-            if (prime[p] == true) {
-                // Update all multiples of p
-                for (int i = p * p; i <= n; i += p)
-                    prime[i] = false;
+        // sieve of
+        for (int i = 2; i < primes.length; i++) {
+            if (primes[i] == true) {
+                for (int j = 2 * i; j < primes.length; j = j + i) {
+                    primes[j] = false;
+                }
             }
         }
 
         // Print all prime numbers
         for (int i = 2; i <= n; i++) {
-            if (prime[i] == true)
+            if (primes[i] == true)
+                System.out.print(i + " ");
+        }
+    }
+
+    // TC: O(N*lglgN)
+    static void optimizedSieveOfEratosthenes(int n) {
+        // so that N is also covered as part of index
+        boolean primes[] = new boolean[n + 1];
+        for (int i = 0; i < primes.length; i++) {
+            primes[i] = true;
+        }
+        // 1. Optimization 1: i < Math.sqrt(N)
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (primes[i] == true) {
+                // 2. Optimization : j = i^2;
+                for (int j = i * i; j < primes.length; j = j + i) {
+                    primes[j] = false;
+                }
+            }
+        }
+
+        // Print all prime numbers
+        for (int i = 2; i <= n; i++) {
+            if (primes[i] == true)
                 System.out.print(i + " ");
         }
     }
@@ -24,7 +50,7 @@ public class main {
     // Driver Program to test above function
     public static void main(String args[]) {
         int n = 100;
-        System.out.print("Following are the prime numbers ");
-        sieveOfEratosthenes(n);
+        System.out.println("Following are the prime numbers:");
+        optimizedSieveOfEratosthenes(n);
     }
 }

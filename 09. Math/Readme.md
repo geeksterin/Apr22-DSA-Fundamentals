@@ -51,9 +51,10 @@
 
 - Check power of two and power of 4 
  <!-- n != 0 && ((n&(n-1)) == 0) && (n & 0xAAAAAAAA) == 0; -->
-
 - Reversing bits.
 - Taking number complement. 
+
+
 - Add Strings : https://leetcode.com/problems/add-strings/ 
 - Add One     : https://leetcode.com/problems/plus-one/
 - Multiply Strings : https://leetcode.com/problems/multiply-strings/ 
