@@ -12,7 +12,8 @@
 
 ----------------------------------------------------------------------------------
 ###  Generating primes:
-- Seive of erathosenes 
+- Naive method of generating TC: O(N.Sqrt(N))
+- Seive of erathosenes  :TC : O(N.lglgN) **
 
 ----------------------------------------------------------------------------------
 ### Bitwise operators
@@ -26,38 +27,36 @@
 5. **>>** : Bitwise right shift , a shift of k steps towards right is dividing by 2^k.
 6. **~**  : Bitwise complement 
 
+### NOTE: To get the minimum bits to represent a Decimal to binary we need ceil(lg(N))
 ----------------------------------------------------------------------------------
-- What is overflow condition while storing numbers and HOW it happens.
 - Basic Bit Manipulation
-    - Check even or odd using bitwise. 
-    - Check if Kth bit is set or not.
-    - Set the kth bit.
+    - Check even or odd using bitwise. (N & 1 == 1)
+    - Check if Kth bit is set or not. (N & (1<<(k-1)) > 0)
+    - Set the kth bit. (N | (1<<(k-1))
     - Unset the kth bit.
     - Toggle the Kth bit 
-    - Unsetting the rightmost set bit. ***
+    - Unsetting the rightmost set bit. *** N &(N-1)
 
-### NOTE: To get the minimum bits to represent a Decimal to binary we need ceil(lg(N))
-    - Writig your own function to convert:
-        - Decimal --> Binary
-        - Decimal --> Octal 
-        - Decimal --> Hexa 
 - Count number of set bits  ***
+- Check power of 2.
+- pow(a,b) **
+- Find the single number.
+----------------------------------------------------------------------------------
+- Writig your own function to convert:
+    - Decimal --> Binary
+    - Decimal --> Octal 
+    - Decimal --> HexaDecimal
+- What is overflow condition while storing numbers and HOW it happens.
+
+
 - Check power of two and power of 4 
  <!-- n != 0 && ((n&(n-1)) == 0) && (n & 0xAAAAAAAA) == 0; -->
-- pow(a,b)
-- Find the odd number.
+
 - Reversing bits.
-
-
 - Taking number complement. 
-- Check number of zeros in factorials
-
-
-7. Modular Arithematic 
-    - What is 
-    - Why ***
-    - How 
-
+- Add Strings : https://leetcode.com/problems/add-strings/ 
+- Add One     : https://leetcode.com/problems/plus-one/
+- Multiply Strings : https://leetcode.com/problems/multiply-strings/ 
 ----------------------------------------------------------------------------------
 ### Power of Two
 1. 2^0 = 1

@@ -27,7 +27,7 @@ public class CountSetBits {
         int N = 17; // 0001 0001
         System.out.println("Set Bits present in N: " + countBits(N));
         System.out.println("Set Bits present in N: " + optimizedCountBits(N));
-        // System.out.println(Integer.bitCount(N));
+        System.out.println(Integer.bitCount(N));
 
     }
 }
