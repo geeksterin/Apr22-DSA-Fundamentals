@@ -43,12 +43,16 @@ NOTE: Code reuse is best achieved by aggregation.
 -   The fact that Java does not support multiple inheritances is one reason for favoring composition over inheritance in Java. Since you can only extend one class in Java, but if you need multiple features, such as reading and writing character data into a file, you need Reader and Writer functionality. It makes your job simple to have them as private members, and this is called Composition.
 Composition offers better test-ability of a class than Inheritance. If one class consists of another class, you can easily construct a Mock Object representing a composed class for the sake of testing. This privilege is not given by inheritance.
 
-
 ## Types of inheritance
-
-
+1. single inheritance : A->B
+2. multi-level inheritance : A->B->C->D
+3. multiple inheritance (in java it's support through interfaces and not through class).
+4. Hierarichal inheritance: A->B; A->C; A->D
 
 **Q: Why is multiple inheritance is not supported in java?**
 - Multiple is supported in java but not through class but ONLY through interfaces.
 - **Diamond problem**: 
+    - It's a ambigious issue in which the derived class doesn't know which method to invoke as both the parent class have same method signature and the dervied class doesn't override the common method.
+    
+- Interfaces comes to rescue: 
 ----------------------------------------------------------------------------------------------------

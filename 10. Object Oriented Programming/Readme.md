@@ -36,16 +36,16 @@ Ans: Object takes memory
     - public 
     - default : 
 
-
 ## Polymorphism 
     - Compile time polymorpism 
     - Runtime polymorphism 
 
 ## Object Class : java.lang
 ----------------------------------------------------------------------
-
-
-
+- clone()
+- hashCode()
+- equals()
+- ...
 
 ## GC: breif intro 
 ---------------------------------------------------------------------
