@@ -11,7 +11,5 @@
 
 ## Points to Remember:
 1. **Classes in java are allowed to use only the "public" or "default" access modifier.**
-
 2. Class members i.e variables and methods are allowed to use any of the four access modifiers.
 
-3. 

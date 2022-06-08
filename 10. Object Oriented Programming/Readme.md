@@ -7,38 +7,24 @@
 3. Functional programming [payment gateways are classic examples ]
 4. Machine learning 
 
-## Object: 
-    - Instance of a class 
-    - Object is a construct which mimics a real world entity.
-## Class:
-    - It's a blueprint / overall map 
-    - example: A car blueprint lays down every technical and non-technical specification of the car and now using this blueprint , the factory can produce N number of cars.
-    - A class has 2 broad division :
-        - Class members aka fields, features
-        - Methods aka Member function
-
-Features: Are used for identifying objects 
-
-Q: Which out of class and Object occpies memory?
-Ans: Object takes memory 
-
 ## Features of OOP in details
-## 1. Abstraction: Hiding unnecessary details 
-- Reason to abstract :
-    - Abstraction reduces complexity of code by hiding unnecessary details 
-    - It also reduces the impact of change.
-    - **Security**: At times we don't want critical thinks to be visible to other people.
-    - **Loosely-Coupled System**: 
-    - **Intefaces and Abstract Classes are mechanism to bring abstraction in code.**
-- Data Hiding: Using Access specifiers we achieve data hiding in Java.
-    - private 
-    - protected
-    - public 
-    - default : 
+- Encapsulation:
+    - classes 
+    - access specifiers
+    - getters/setters method.
+    
+- Abstraction: Hiding unnecessary details 
+    - interfaces
+    - abstract classes
 
-## Polymorphism 
-    - Compile time polymorpism 
-    - Runtime polymorphism 
+- Inheritance:
+
+- Polymorphism
+    - compiletime / static 
+    - runtime / dynamic 
+
+
+
 
 ## Object Class : java.lang
 ----------------------------------------------------------------------

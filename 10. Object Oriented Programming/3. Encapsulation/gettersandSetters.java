@@ -1,4 +1,5 @@
 
+//Using getters and setters we can achieve the following:
 // 1. Security 
 // 2. Filteration or permission can set using setters 
 class Person {
@@ -11,6 +12,7 @@ class Person {
     }
 
     public void setAge(int age) {
+        // verification logic
         if (age < 0 || age >= 100) {
             System.out.println("Please enter a valid age");
             return;
@@ -21,7 +23,7 @@ class Person {
     // getters
     public String getName() {
         return this.name;
-        //add some logic to return in JSON / XML.
+        // add some logic to return in JSON / XML.
     }
 
     public int getAge() {

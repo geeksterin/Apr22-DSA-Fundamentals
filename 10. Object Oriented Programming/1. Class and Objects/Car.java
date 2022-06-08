@@ -1,4 +1,3 @@
-import java.sql.Array;
 
 public class Car {
     // all the specification will go here
@@ -12,13 +11,12 @@ public class Car {
 
     }
 
-    public static Car main(String[] args) {
-        //Creating a object.
-        Car car1 = new Car(); 
+    public static void main(String[] args) {
+        // Creating a object. aka instantiation of objects
+        Car car1 = new Car();
         car1.brand = "alto";
 
         Car car2 = new Car();
-    
 
     }
 }
